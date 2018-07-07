@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Jul 05 19:38:20 2018
+# Process ID: 8124
+# Current directory: C:/Users/Esio/Desktop/ULA_projeto_final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3900 C:\Users\Esio\Desktop\ULA_projeto_final\ULA_projeto_final.xpr
+# Log file: C:/Users/Esio/Desktop/ULA_projeto_final/vivado.log
+# Journal file: C:/Users/Esio/Desktop/ULA_projeto_final\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Esio/Desktop/ULA_projeto_final/ULA_projeto_final.xpr
+save_project_as projeto_final_ula C:/Users/Esio/Desktop/projeto_final_ula -force
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1

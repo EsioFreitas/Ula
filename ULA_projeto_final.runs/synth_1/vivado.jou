@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Wed Jul  4 19:14:01 2018
+# Process ID: 10872
+# Current directory: /media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.runs/synth_1
+# Command line: vivado -log Top_level.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_level.tcl
+# Log file: /media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.runs/synth_1/Top_level.vds
+# Journal file: /media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source Top_level.tcl -notrace

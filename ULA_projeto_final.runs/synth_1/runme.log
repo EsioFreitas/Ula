@@ -1,0 +1,430 @@
+
+*** Running vivado
+    with args -log Top_level.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_level.tcl
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Top_level.tcl -notrace
+Command: synth_design -top Top_level -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10894 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1309.184 ; gain = 86.848 ; free physical = 2457 ; free virtual = 5930
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Top_level' [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/Top_level.vhd:14]
+INFO: [Synth 8-3491] module 'operacoes' declared at '/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/operacoes.vhd:6' bound to instance 'ULA' of component 'operacoes' [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/Top_level.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'operacoes' [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/operacoes.vhd:14]
+INFO: [Synth 8-226] default block is never used [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/operacoes.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'operacoes' (1#1) [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/operacoes.vhd:14]
+INFO: [Synth 8-3491] module 'decodificacao' declared at '/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/decodificacao.vhd:25' bound to instance 'DECODIFICADOR' of component 'decodificacao' [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/Top_level.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'decodificacao' [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/decodificacao.vhd:34]
+INFO: [Synth 8-3491] module 'divisor_de_clock' declared at '/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/divisor_de_clock.vhd:6' bound to instance 'clock' of component 'divisor_de_clock' [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/decodificacao.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'divisor_de_clock' [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/divisor_de_clock.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'divisor_de_clock' (2#1) [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/divisor_de_clock.vhd:11]
+INFO: [Synth 8-3491] module 'multi_erro' declared at '/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/multi_erro.vhd:25' bound to instance 'multiplexa_erro' of component 'multi_erro' [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/decodificacao.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'multi_erro' [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/multi_erro.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'multi_erro' (3#1) [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/multi_erro.vhd:30]
+INFO: [Synth 8-3491] module 'multi_final' declared at '/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/multi_final.vhd:25' bound to instance 'multiplexa_tudo' of component 'multi_final' [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/decodificacao.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'multi_final' [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/multi_final.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'multi_final' (4#1) [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/multi_final.vhd:32]
+INFO: [Synth 8-3491] module 'mux4x1' declared at '/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/mux4x1.vhd:4' bound to instance 'mux' of component 'mux4x1' [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/decodificacao.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'mux4x1' [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/mux4x1.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'mux4x1' (5#1) [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/mux4x1.vhd:13]
+INFO: [Synth 8-3491] module 'BCD' declared at '/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/BCD.vhd:34' bound to instance 'conversorBCD' of component 'BCD' [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/decodificacao.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'BCD' [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/BCD.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'BCD' (6#1) [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/BCD.vhd:39]
+INFO: [Synth 8-3491] module 'decimal' declared at '/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/decimal.vhd:6' bound to instance 'decod_decimal' of component 'decimal' [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/decodificacao.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'decimal' [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/decimal.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'decimal' (7#1) [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/decimal.vhd:12]
+INFO: [Synth 8-3491] module 'hexadecimal' declared at '/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/hexadecimal.vhd:4' bound to instance 'decod_hexadecimal' of component 'hexadecimal' [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/decodificacao.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'hexadecimal' [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/hexadecimal.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'hexadecimal' (8#1) [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/hexadecimal.vhd:10]
+INFO: [Synth 8-3491] module 'octal' declared at '/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/octal.vhd:4' bound to instance 'decod_octal' of component 'octal' [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/decodificacao.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'octal' [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/octal.vhd:11]
+WARNING: [Synth 8-614] signal 'sb' is read in the process but is not in the sensitivity list [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/octal.vhd:17]
+WARNING: [Synth 8-614] signal 'sa' is read in the process but is not in the sensitivity list [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/octal.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'octal' (9#1) [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/octal.vhd:11]
+INFO: [Synth 8-3491] module 'binario' declared at '/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/binario.vhd:25' bound to instance 'decod_binario' of component 'binario' [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/decodificacao.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'binario' [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/binario.vhd:31]
+WARNING: [Synth 8-614] signal 'sa' is read in the process but is not in the sensitivity list [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/binario.vhd:38]
+WARNING: [Synth 8-614] signal 'sb' is read in the process but is not in the sensitivity list [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/binario.vhd:38]
+WARNING: [Synth 8-614] signal 'sc' is read in the process but is not in the sensitivity list [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/binario.vhd:38]
+WARNING: [Synth 8-614] signal 'sd' is read in the process but is not in the sensitivity list [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/binario.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'binario' (10#1) [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/binario.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'decodificacao' (11#1) [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/decodificacao.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'Top_level' (12#1) [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/Top_level.vhd:14]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1353.793 ; gain = 131.457 ; free physical = 2453 ; free virtual = 5928
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1353.793 ; gain = 131.457 ; free physical = 2452 ; free virtual = 5927
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1353.793 ; gain = 131.457 ; free physical = 2452 ; free virtual = 5927
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc]
+Finished Parsing XDC File [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_level_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_level_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1673.090 ; gain = 0.000 ; free physical = 2068 ; free virtual = 5589
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:48 ; elapsed = 00:01:12 . Memory (MB): peak = 1673.090 ; gain = 450.754 ; free physical = 2098 ; free virtual = 5611
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:48 ; elapsed = 00:01:12 . Memory (MB): peak = 1673.090 ; gain = 450.754 ; free physical = 2098 ; free virtual = 5611
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:01:12 . Memory (MB): peak = 1673.090 ; gain = 450.754 ; free physical = 2098 ; free virtual = 5611
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <multiplier> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/operacoes.vhd:24]
+INFO: [Synth 8-5545] ROM "ov" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "F" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ss1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ss" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/operacoes.vhd:54]
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sin" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 'ss_reg' [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/operacoes.vhd:42]
+WARNING: [Synth 8-327] inferring latch for variable 'F_reg' [/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.srcs/sources_1/new/operacoes.vhd:25]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:51 ; elapsed = 00:01:15 . Memory (MB): peak = 1673.090 ; gain = 450.754 ; free physical = 2075 ; free virtual = 5590
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	  16 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 9     
+	   2 Input     31 Bit        Muxes := 3     
+	   4 Input      5 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	  16 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module operacoes 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
++---Muxes : 
+	  16 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 8     
+	   2 Input     31 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+	  16 Input      1 Bit        Muxes := 1     
+Module divisor_de_clock 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module multi_erro 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 1     
+Module multi_final 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module mux4x1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 1     
+Module decimal 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+Module hexadecimal 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module octal 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 2     
+Module binario 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 1     
+Module decodificacao 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "ov" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ss1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ss" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "F" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "DECODIFICADOR/clock/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "DECODIFICADOR/clock/sin" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:27 . Memory (MB): peak = 1673.090 ; gain = 450.754 ; free physical = 2139 ; free virtual = 5656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+---------------------------------+---------------+----------------+
+|Module Name | RTL Object                      | Depth x Width | Implemented As | 
++------------+---------------------------------+---------------+----------------+
+|BCD         | sout                            | 32x7          | LUT            | 
+|Top_level   | DECODIFICADOR/conversorBCD/sout | 32x7          | LUT            | 
++------------+---------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:19 ; elapsed = 00:01:50 . Memory (MB): peak = 1673.090 ; gain = 450.754 ; free physical = 1788 ; free virtual = 5356
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:01:51 . Memory (MB): peak = 1675.098 ; gain = 452.762 ; free physical = 1785 ; free virtual = 5354
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:21 ; elapsed = 00:01:53 . Memory (MB): peak = 1675.098 ; gain = 452.762 ; free physical = 1773 ; free virtual = 5343
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:24 ; elapsed = 00:01:56 . Memory (MB): peak = 1675.098 ; gain = 452.762 ; free physical = 1768 ; free virtual = 5339
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:24 ; elapsed = 00:01:56 . Memory (MB): peak = 1675.098 ; gain = 452.762 ; free physical = 1767 ; free virtual = 5338
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:24 ; elapsed = 00:01:56 . Memory (MB): peak = 1675.098 ; gain = 452.762 ; free physical = 1758 ; free virtual = 5329
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:24 ; elapsed = 00:01:56 . Memory (MB): peak = 1675.098 ; gain = 452.762 ; free physical = 1758 ; free virtual = 5329
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:24 ; elapsed = 00:01:56 . Memory (MB): peak = 1675.098 ; gain = 452.762 ; free physical = 1757 ; free virtual = 5328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:24 ; elapsed = 00:01:56 . Memory (MB): peak = 1675.098 ; gain = 452.762 ; free physical = 1756 ; free virtual = 5327
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |   401|
+|3     |LUT1   |    61|
+|4     |LUT2   |  1114|
+|5     |LUT3   |    32|
+|6     |LUT4   |    67|
+|7     |LUT5   |   148|
+|8     |LUT6   |   309|
+|9     |MUXF7  |     6|
+|10    |FDRE   |    34|
+|11    |LD     |    36|
+|12    |IBUF   |    15|
+|13    |OBUF   |    11|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------+-----------------+------+
+|      |Instance        |Module           |Cells |
++------+----------------+-----------------+------+
+|1     |top             |                 |  2236|
+|2     |  DECODIFICADOR |decodificacao    |    68|
+|3     |    clock       |divisor_de_clock |    68|
+|4     |  ULA           |operacoes        |  2071|
++------+----------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:24 ; elapsed = 00:01:56 . Memory (MB): peak = 1675.098 ; gain = 452.762 ; free physical = 1755 ; free virtual = 5326
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:09 ; elapsed = 00:01:22 . Memory (MB): peak = 1675.098 ; gain = 133.465 ; free physical = 1835 ; free virtual = 5406
+Synthesis Optimization Complete : Time (s): cpu = 00:01:24 ; elapsed = 00:01:56 . Memory (MB): peak = 1675.105 ; gain = 452.762 ; free physical = 1835 ; free virtual = 5406
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 458 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'Top_level' is not ideal for floorplanning, since the cellview 'operacoes' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 4 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 36 instances were transformed.
+  LD => LDCE: 32 instances
+  LD => LDCE (inverted pins: G): 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+64 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:30 ; elapsed = 00:02:02 . Memory (MB): peak = 1675.105 ; gain = 465.375 ; free physical = 1826 ; free virtual = 5397
+INFO: [Common 17-1381] The checkpoint '/media/anderson/Dados/Vivado_linux/ULA_projeto_final/ULA_projeto_final.runs/synth_1/Top_level.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_level_utilization_synth.rpt -pb Top_level_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.43 . Memory (MB): peak = 1699.109 ; gain = 0.000 ; free physical = 1818 ; free virtual = 5392
+INFO: [Common 17-206] Exiting Vivado at Wed Jul  4 19:16:33 2018...

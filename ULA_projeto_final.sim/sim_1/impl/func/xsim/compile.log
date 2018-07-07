@@ -1,0 +1,11 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/anderson/Dados/Vivado_linux/projeto_final_PED/projeto_final_PED.sim/sim_1/impl/func/xsim/memoria_tb_func_impl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity basico
+INFO: [VRFC 10-307] analyzing entity divclock
+INFO: [VRFC 10-307] analyzing entity memoria
+INFO: [VRFC 10-307] analyzing entity topleveldecod
+INFO: [VRFC 10-307] analyzing entity ULATOPLEVEL
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/anderson/Dados/Vivado_linux/projeto_final_PED/projeto_final_PED.srcs/sources_1/new/memoria.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memoria
+WARNING: [VRFC 10-1193] overwriting existing primary unit memoria [/media/anderson/Dados/Vivado_linux/projeto_final_PED/projeto_final_PED.srcs/sources_1/new/memoria.vhd:34]
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/anderson/Dados/Vivado_linux/projeto_final_PED/projeto_final_PED.srcs/sim_1/new/tb_memo.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memoria_tb

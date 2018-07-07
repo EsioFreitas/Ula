@@ -1,0 +1,85 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Jul 05 17:47:13 2018
+# Process ID: 7916
+# Current directory: C:/Users/Esio/Desktop/ULA_projeto_final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11696 C:\Users\Esio\Desktop\ULA_projeto_final\ULA_projeto_final.xpr
+# Log file: C:/Users/Esio/Desktop/ULA_projeto_final/vivado.log
+# Journal file: C:/Users/Esio/Desktop/ULA_projeto_final\vivado.jou
+#-----------------------------------------------------------
+start_gui
+oopen_project C:/Users/Esio/Desktop/ULA_projeto_final/ULA_projeto_final.xpr
+INFO: [Project 1-313] Project file moved from '/media/anderson/Dados/Vivado_linux/ULA_projeto_final' since last save.
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Project 1-192] Failed to load run synth_1. Strategy Vivado Synthesis Defaults (Vivado Synthesis 2017) not recognized by Vivado. 
+
+CRITICAL WARNING: [Project 1-192] Failed to load run impl_1. Strategy Vivado Implementation Defaults (Vivado Implementation 2017) not recognized by Vivado. 
+
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name CompiledLibDirXcelium
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name ProjectType
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory '$PIPUSERFILESDIR'.
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimTypes
+WARNING: [Project 1-231] Project 'ULA_projeto_final.xpr' was created with a future version and may or may not perform reliably with this version of Vivado. It has been opened in read-only mode for the protection of unrecognized data. Use 'File | Save Project As...' if you wish to alter a copy of the project.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 05 17:49:11 2018...
+ peak = 708.027 ; gain = 94.473
+save_project_as uuulaa C:/Users/Esio/Desktop/uuulaa -force
+ERROR: [Common 17-662] Can't find app 'xcelium' in either loaded or repo catalog
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-662] Can't find app 'xcelium' in either loaded or repo catalog
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Jul 05 18:36:57 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Esio/Desktop/uuulaa/uuulaa.runs/synth_1/runme.log
+[Thu Jul 05 18:36:57 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Esio/Desktop/uuulaa/uuulaa.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Jul 05 18:44:00 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Esio/Desktop/uuulaa/uuulaa.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.4
+  **** Build date : Jan 23 2017-19:37:29
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 768.695 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A27E65A
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Jul 05 18:44:58 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Esio/Desktop/uuulaa/uuulaa.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Esio/Desktop/uuulaa/uuulaa.runs/impl_1/Top_level.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210183A27E65A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A27E65A
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 05 23:48:44 2018...

@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Jul 05 16:29:58 2018
+# Process ID: 13236
+# Current directory: C:/Users/Esio/Desktop/ULA_projeto_final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5728 C:\Users\Esio\Desktop\ULA_projeto_final\ULA_projeto_final.xpr
+# Log file: C:/Users/Esio/Desktop/ULA_projeto_final/vivado.log
+# Journal file: C:/Users/Esio/Desktop/ULA_projeto_final\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Esio/Desktop/ULA_projeto_final/ULA_projeto_final.xpr
+INFO: [Project 1-313] Project file moved from '/media/anderson/Dados/Vivado_linux/ULA_projeto_final' since last save.
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Project 1-192] Failed to load run synth_1. Strategy Vivado Synthesis Defaults (Vivado Synthesis 2017) not recognized by Vivado. 
+
+CRITICAL WARNING: [Project 1-192] Failed to load run impl_1. Strategy Vivado Implementation Defaults (Vivado Implementation 2017) not recognized by Vivado. 
+
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name CompiledLibDirXcelium
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name ProjectType
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory '$PIPUSERFILESDIR'.
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimTypes
+WARNING: [Project 1-231] Project 'ULA_projeto_final.xpr' was created with a future version and may or may not perform reliably with this version of Vivado. It has been opened in read-only mode for the protection of unrecognized data. Use 'File | Save Project As...' if you wish to alter a copy of the project.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 05 16:56:37 2018...
