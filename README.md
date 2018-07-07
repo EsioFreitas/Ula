@@ -15,9 +15,9 @@ As respostas dessas operações irão aparecer no display de 7 segimentos da Bas
 
 Código    | Base 
 :-------: | ------:
-00        | Decimal
-01        | Hexadecimal 
-10        | Binário
+    00        | Decimal
+    01        | Hexadecimal 
+    10        | Binário
 11        | Octal
 
 
