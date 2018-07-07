@@ -1,7 +1,7 @@
 O programa é um design de circuito digitail de uma Ula aritimética. No programa o usuário poderá fazer as 16 operações seguintes com as entradas A e B:
 
 Código    | Saída   | Código  | Saída   
-:-------: | ------: | ------: | ------: 
+:-------: | :------: | :------: | :------: 
 0000      | 0000    |1000     | A + B
 0001      | 1111    |1001     | A - B
 0010      |  A      |1010     | A * B
@@ -14,7 +14,7 @@ Código    | Saída   | Código  | Saída
 As respostas dessas operações irão aparecer no display de 7 segimentos da Basy3 de acordo com a base numérica escolhida: 
 
 Código    | Base 
-:-------: | ------:
+:-------: | :------:
 00        | Decimal
 01        | Hexadecimal 
 10        | Binário
